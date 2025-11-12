@@ -1,0 +1,192 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #eee;
+  margin: 0;
+}
+
+.hero {
+  background-image: url('../img/frente.webp');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* aumenté un poco la opacidad */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Flexbox y grid ejemplos */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+form {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+}
+
+form .form-control,
+form .form-select {
+  background-color: #222;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+form .form-control:focus,
+form .form-select:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.4);
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* NAV PERSONALIZADO */
+.logo {
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.navbar-brand h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+/* Asegura que los enlaces sean visibles y puedan cambiar de color */
+.navbar-nav .nav-link {
+  color: #ffc107 !important;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ffc107 !important;  /* Dorado */
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Evita que quede "tildado" después del hover */
+.navbar-nav .nav-link:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Cuando no está activo ni en hover, mantiene el color blanco */
+.navbar-nav .nav-link:not(.active):not(:hover) {
+  color: #fff !important;
+}
+
+header, .navbar {
+  position: relative;
+  z-index: 10; /* asegura que el header esté por encima */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad */
+  z-index: 0; /* el fondo queda detrás */
+}
+
+.hero .container,
+.hero div,
+.hero a,
+.hero h2,
+.hero p {
+  position: relative;
+  z-index: 2; /* Contenido por encima del fondo */
+}
+
+.dropdown-menu {
+  background-color: #111;
+  border: 1px solid #444;
+}
+
+.dropdown-item {
+  color: #fff !important;          /* Gris oscuro */
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover: dorado más brillante y fondo oscuro */
+.dropdown-item:hover {
+  background-color: #222 !important;  /* Fondo dorado */
+  color: #ffc107 !important;             /* Letra blanca al pasar el cursor */
+}
