@@ -1,0 +1,19 @@
+@use "../utils/variables" as *;
+
+form {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+
+    .form-control,
+    .form-select {
+        background-color: #222;
+        color: #eee;
+        border: 1px solid #555;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #ffc107;
+        box-shadow: 0 0 5px rgba(255, 193, 7, 0.4);
+    }
+}

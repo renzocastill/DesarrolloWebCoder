@@ -1,0 +1,29 @@
+@use "../utils/variables" as *;
+
+.hero {
+    background-image: url("../img/frente.webp");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

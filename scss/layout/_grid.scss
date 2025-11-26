@@ -1,0 +1,12 @@
+@use "../utils/variables" as *;
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    gap: $spacing-m;
+}

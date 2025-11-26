@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Servicios - Maldita Peluquerías</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
@@ -13,43 +14,47 @@
 
   <!-- Header -->
   <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <!-- LOGO + TÍTULO -->
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
-      <img src="../assets/img/maldita peluqueria.jpg" alt="Logo Maldita" class="logo">
-      <h1 class="h3 m-0">Maldita Peluquerías</h1>
-    </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container d-flex justify-content-between align-items-center">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link text-light" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="nosotros.html">Nosotros</a></li>
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle text-warning" href="servicios.html" id="serviciosDropdown" role="button" aria-expanded="false">
-    Servicios
-  </a>
-  <ul class="dropdown-menu bg-dark" aria-labelledby="serviciosDropdown">
-    <li><a class="dropdown-item text-light" href="servicios.html#coloracion">Coloración</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#corte">Corte & Estilo</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#peinados">Peinados</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#tratamientos">Tratamientos</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#alisado">Alisado</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#loreal">Productos L'Oréal</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#balayage">Balayage</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#kerastase">Productos Kérastase</a></li>
-  </ul>
-</li>
+        <!-- LOGO + TÍTULO -->
+        <a href="../index.html" class="navbar-brand d-flex align-items-center">
+          <img src="../assets/img/maldita peluqueria.jpg" alt="Logo Maldita" class="logo">
+          <h1 class="h3 m-0">Maldita Peluquerías</h1>
+        </a>
 
-          <li class="nav-item"><a class="nav-link text-light" href="turnos.html">Turnos</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-light" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="nosotros.html">Nosotros</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-warning" href="servicios.html" id="serviciosDropdown" role="button">
+                Servicios
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="serviciosDropdown">
+                <li><a class="dropdown-item text-light" href="#coloracion">Coloración</a></li>
+                <li><a class="dropdown-item text-light" href="#corte">Corte & Estilo</a></li>
+                <li><a class="dropdown-item text-light" href="#peinados">Peinados</a></li>
+                <li><a class="dropdown-item text-light" href="#tratamientos">Tratamientos</a></li>
+                <li><a class="dropdown-item text-light" href="#alisado">Alisado</a></li>
+                <li><a class="dropdown-item text-light" href="#loreal">Productos L'Oréal</a></li>
+                <li><a class="dropdown-item text-light" href="#balayage">Balayage</a></li>
+                <li><a class="dropdown-item text-light" href="#kerastase">Productos Kérastase</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link text-light" href="turnos.html">Turnos</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+      </div>
     </nav>
   </header>
 
@@ -64,8 +69,9 @@
 
     <!-- Galería -->
     <div class="row g-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-light border-0 shadow-sm">
+
+      <div class="col-md-4 fade-up">
+  <div class="card-servicio">
           <img src="../assets/img/tratamiento.jpg" class="card-img-top" alt="Coloración profesional" />
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Coloración</h5>
@@ -74,8 +80,8 @@
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-light border-0 shadow-sm">
+      <div class="col-md-4 fade-up">
+  <div class="card-servicio">
           <img src="../assets/img/blonde.jpg" class="card-img-top" alt="Corte y estilismo" />
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Corte & Estilo</h5>
@@ -84,18 +90,18 @@
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-light border-0 shadow-sm">
-          <img src="../assets/img/rubio.jpg" class="card-img-top" alt="Peinados" />
+      <div class="col-md-4 fade-up">
+  <div class="card-servicio">
+          <img src="../assets/img/rubio.jpg" class="card-img-top" alt="Peinados profesionales" />
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Peinados</h5>
-            <p class="card-text">Para eventos, bodas o momentos especiales.</p>
+            <p class="card-text">Peinados para eventos, bodas y ocasiones especiales.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-light border-0 shadow-sm">
+      <div class="col-md-4 fade-up">
+  <div class="card-servicio">
           <img src="../assets/img/colorado.jpg" class="card-img-top" alt="Tratamientos capilares" />
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Tratamientos</h5>
@@ -104,8 +110,8 @@
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-light border-0 shadow-sm">
+      <div class="col-md-4 fade-up">
+  <div class="card-servicio">
           <img src="../assets/img/chocolate.jpg" class="card-img-top" alt="Alisado y keratina" />
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Alisado</h5>
@@ -114,35 +120,36 @@
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-light border-0 shadow-sm">
-          <img src="../assets/img/loreal.jpg" class="card-img-top" alt="Diagnóstico y asesoramiento personalizado" />
+      <div class="col-md-4 fade-up">
+  <div class="card-servicio">
+          <img src="../assets/img/loreal.jpg" class="card-img-top" alt="Productos L'Oréal" />
           <div class="card-body text-center">
-            <h5 class="card-title text-warning">Productos L'ORÉAL</h5>
-            <p class="card-text">Asesoramiento personalizado con los mejores productos.</p>
+            <h5 class="card-title text-warning">Productos L'Oréal</h5>
+            <p class="card-text">Asesoramiento personalizado con productos profesionales.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-light border-0 shadow-sm">
-          <img src="../assets/img/clientas.webp" class="card-img-top" alt="Brushing y secado" />
+      <div class="col-md-4 fade-up">
+  <div class="card-servicio">
+          <img src="../assets/img/clientas.webp" class="card-img-top" alt="Balayage profesional" />
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Balayage</h5>
-            <p class="card-text">Secado profesional para un acabado perfecto y duradero.</p>
+            <p class="card-text">Técnica de iluminación suave y natural.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-6">
-        <div class="card bg-dark text-light border-0 shadow-sm">
-          <img src="../assets/img/kerastase.jpg" class="card-img-top" alt="Cuidados para tu cabello con Kérastase" />
+      <div class="col-md-4 fade-up">
+  <div class="card-servicio">
+          <img src="../assets/img/kerastase.jpg" class="card-img-top" alt="Productos Kérastase" />
           <div class="card-body text-center">
             <h5 class="card-title text-warning">Productos Kérastase</h5>
-            <p class="card-text">El enfoque de Kérastase se centra en ofrecer soluciones innovadoras y de alta calidad para el tratamiento de todo tipo de problemas capilares.</p>
+            <p class="card-text">Soluciones premium para todo tipo de problemas capilares.</p>
           </div>
         </div>
       </div>
+
     </div>
   </main>
 
@@ -151,30 +158,29 @@
     <p class="mb-0">&copy; 2025 Maldita Peluquerías - Todos los derechos reservados.</p>
   </footer>
 
-<!-- Bootstrap Icons -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-  // Mostrar el dropdown al pasar el mouse
-  document.querySelectorAll('.dropdown').forEach(dropdown => {
-    dropdown.addEventListener('mouseenter', function () {
-      const toggle = this.querySelector('.nav-link');
-      const menu = this.querySelector('.dropdown-menu');
-      const bsDropdown = new bootstrap.Dropdown(toggle);
-      bsDropdown.show();
-    });
-    dropdown.addEventListener('mouseleave', function () {
-      const toggle = this.querySelector('.nav-link');
-      const bsDropdown = bootstrap.Dropdown.getInstance(toggle);
-      bsDropdown.hide();
-    });
-  });
+  <script>
+    // Mostrar el dropdown al pasar el mouse
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      dropdown.addEventListener('mouseenter', function () {
+        const toggle = this.querySelector('.nav-link');
+        const bsDropdown = new bootstrap.Dropdown(toggle);
+        bsDropdown.show();
+      });
 
-  // Asegurar que el clic en "Servicios" te lleve a la página
-  document.querySelector('#serviciosDropdown').addEventListener('click', function (e) {
-    window.location.href = this.getAttribute('href');
-  });
-</script>
+      dropdown.addEventListener('mouseleave', function () {
+        const toggle = this.querySelector('.nav-link');
+        const bsDropdown = bootstrap.Dropdown.getInstance(toggle);
+        bsDropdown.hide();
+      });
+    });
+
+    // Clic en "Servicios" lleva a la página
+    document.querySelector('#serviciosDropdown').addEventListener('click', function () {
+      window.location.href = this.getAttribute('href');
+    });
+  </script>
 
 </body>
 </html>

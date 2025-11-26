@@ -4,8 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Turnos - Maldita Peluquerías</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
@@ -13,48 +17,59 @@
 
   <!-- Header -->
   <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <!-- LOGO + TÍTULO -->
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
-      <img src="../assets/img/maldita peluqueria.jpg" alt="Logo Maldita" class="logo">
-      <h1 class="h3 m-0">Maldita Peluquerías</h1>
-    </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container d-flex justify-content-between align-items-center">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link text-light" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="nosotros.html">Nosotros</a></li>
-          <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle text-warning" href="servicios.html" id="serviciosDropdown" role="button" aria-expanded="false">
-    Servicios
-  </a>
-  <ul class="dropdown-menu bg-dark" aria-labelledby="serviciosDropdown">
-    <li><a class="dropdown-item text-light" href="servicios.html#coloracion">Coloración</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#corte">Corte & Estilo</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#peinados">Peinados</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#tratamientos">Tratamientos</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#alisado">Alisado</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#loreal">Productos L'Oréal</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#balayage">Balayage</a></li>
-    <li><a class="dropdown-item text-light" href="servicios.html#kerastase">Productos Kérastase</a></li>
-  </ul>
-</li>
-          <li class="nav-item"><a class="nav-link text-warning" href="turnos.html">Turnos</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </nav>
+        <!-- LOGO + TÍTULO -->
+        <a href="../index.html" class="navbar-brand d-flex align-items-center">
+          <img src="../assets/img/maldita peluqueria.jpg" alt="Logo Maldita" class="logo">
+          <h1 class="h3 m-0">Maldita Peluquerías</h1>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+
+            <!-- Dropdown Servicios -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./servicios.html" id="serviciosDropdown" role="button">
+                Servicios
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-light" href="./servicios.html#coloracion">Coloración</a></li>
+                <li><a class="dropdown-item text-light" href="./servicios.html#corte">Corte & Estilo</a></li>
+                <li><a class="dropdown-item text-light" href="./servicios.html#peinados">Peinados</a></li>
+                <li><a class="dropdown-item text-light" href="./servicios.html#tratamientos">Tratamientos</a></li>
+                <li><a class="dropdown-item text-light" href="./servicios.html#alisado">Alisado</a></li>
+                <li><a class="dropdown-item text-light" href="./servicios.html#loreal">Productos L'Oréal</a></li>
+                <li><a class="dropdown-item text-light" href="./servicios.html#balayage">Balayage</a></li>
+                <li><a class="dropdown-item text-light" href="./servicios.html#kerastase">Productos Kérastase</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link text-warning" href="./turnos.html">Turnos</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
   </header>
 
   <!-- Main -->
   <main class="container my-5">
     <h2 class="text-center text-warning mb-4">Reservá tu Turno</h2>
+
     <p class="text-center mb-5">
       En <strong>Maldita Peluquerías</strong> te esperamos con la mejor atención.  
       Completá el siguiente formulario y nos pondremos en contacto para confirmar tu turno.
@@ -62,22 +77,29 @@
 
     <div class="row justify-content-center">
       <div class="col-lg-8 col-md-10">
+
+        <!-- FORMULARIO -->
         <form class="p-4 bg-dark text-light rounded shadow">
+
           <div class="row mb-3">
+
             <div class="col-md-6">
               <label for="nombre" class="form-label">Nombre completo</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Ej: María Gómez" required />
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: María Gómez" required>
             </div>
+
             <div class="col-md-6">
               <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="email" placeholder="Ej: maria@gmail.com" required />
+              <input type="email" class="form-control" id="email" name="email" placeholder="Ej: maria@gmail.com" required>
             </div>
+
           </div>
 
           <div class="row mb-3">
+
             <div class="col-md-6">
               <label for="servicio" class="form-label">Servicio</label>
-              <select class="form-select" id="servicio" required>
+              <select class="form-select" id="servicio" name="servicio" required>
                 <option value="">Seleccioná un servicio</option>
                 <option value="babylights">Babylight's</option>
                 <option value="corte">Corte & Estilo</option>
@@ -90,17 +112,20 @@
                 <option value="mechas">Mechas</option>
               </select>
             </div>
+
             <div class="col-md-3">
               <label for="fecha" class="form-label">Fecha</label>
-              <input type="date" class="form-control" id="fecha" required />
+              <input type="date" class="form-control" id="fecha" name="fecha" required>
             </div>
+
             <div class="col-md-3">
               <label for="hora" class="form-label">Hora</label>
-              <input type="time" class="form-control" id="hora" required />
+              <input type="time" class="form-control" id="hora" name="hora" required>
             </div>
-            <div class="col-md-6">
+
+            <div class="col-md-6 mt-3">
               <label for="estilista" class="form-label">Estilista</label>
-              <select class="form-select" id="estilista" required>
+              <select class="form-select" id="estilista" name="estilista" required>
                 <option value="">Seleccioná un estilista</option>
                 <option value="Agustina">Agustina</option>
                 <option value="Mario">Mario</option>
@@ -110,16 +135,18 @@
                 <option value="Luisina">Luisina</option>
               </select>
             </div>
+
           </div>
 
           <div class="mb-3">
             <label for="mensaje" class="form-label">Mensaje adicional</label>
-            <textarea class="form-control" id="mensaje" rows="4" placeholder="Ej: Preferiría un turno por la tarde..."></textarea>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Ej: Preferiría un turno por la tarde..."></textarea>
           </div>
 
           <div class="text-center">
             <button type="submit" class="btn btn-warning px-4 py-2 mt-3">Reservar Turno</button>
           </div>
+
         </form>
       </div>
     </div>
@@ -130,30 +157,29 @@
     <p class="mb-0">&copy; 2025 Maldita Peluquerías - Todos los derechos reservados.</p>
   </footer>
 
-<!-- Bootstrap Icons -->
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-  // Mostrar el dropdown al pasar el mouse
-  document.querySelectorAll('.dropdown').forEach(dropdown => {
-    dropdown.addEventListener('mouseenter', function () {
-      const toggle = this.querySelector('.nav-link');
-      const menu = this.querySelector('.dropdown-menu');
-      const bsDropdown = new bootstrap.Dropdown(toggle);
-      bsDropdown.show();
+  <!-- Dropdown Hover -->
+  <script>
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      dropdown.addEventListener('mouseenter', function () {
+        const toggle = this.querySelector('.nav-link');
+        const bsDropdown = new bootstrap.Dropdown(toggle);
+        bsDropdown.show();
+      });
+      dropdown.addEventListener('mouseleave', function () {
+        const toggle = this.querySelector('.nav-link');
+        const bsDropdown = bootstrap.Dropdown.getInstance(toggle);
+        bsDropdown.hide();
+      });
     });
-    dropdown.addEventListener('mouseleave', function () {
-      const toggle = this.querySelector('.nav-link');
-      const bsDropdown = bootstrap.Dropdown.getInstance(toggle);
-      bsDropdown.hide();
-    });
-  });
 
-  // Asegurar que el clic en "Servicios" te lleve a la página
-  document.querySelector('#serviciosDropdown').addEventListener('click', function (e) {
-    window.location.href = this.getAttribute('href');
-  });
-</script>
+    document.querySelector('#serviciosDropdown').addEventListener('click', function () {
+      window.location.href = this.getAttribute('href');
+    });
+  </script>
 
 </body>
 </html>

@@ -1,0 +1,20 @@
+@use "../utils/variables" as *;
+
+// Centrado automático
+@mixin flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+// Responsive
+@mixin responsive($size) {
+@media (max-width: $size) {
+    @content;
+}
+}
+
+// Sombras suaves
+@mixin soft-shadow {
+box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}

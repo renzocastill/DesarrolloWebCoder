@@ -1,0 +1,41 @@
+/* === ANIMACIONES GENERALES === */
+@use "../utils/variables" as *;
+
+/* Animación al aparecer */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase para aplicarla */
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* === ANIMACIÓN HOVER EN TARJETAS === */
+.card-servicio {
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.25);
+  }
+
+  img {
+    width: 100%;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.07);
+  }
+}

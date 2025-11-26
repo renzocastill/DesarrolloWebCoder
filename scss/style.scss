@@ -1,0 +1,26 @@
+// === VARIABLES GLOBALES ===
+@use "utils/variables" as *;
+
+// === UTILS ===
+@use "utils/mixins";
+@use "utils/animations";
+
+// === BASE ===
+@use "base/reset";
+@use "base/typography";
+
+// === LAYOUT ===
+@use "layout/header";
+@use "layout/footer";
+@use "layout/grid";
+
+// === COMPONENTS ===
+@use "components/buttons";
+@use "components/navbar";
+@use "components/cards";
+@use "components/forms";
+@use "components/hero";
+
+// === PAGES ===
+@use "pages/index";
+@use "pages/contacto";

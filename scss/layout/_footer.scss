@@ -1,0 +1,14 @@
+@use "../utils/variables" as *;
+
+.flex-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    background: #111; // color original de tu CSS
+    color: white;
+    padding: $spacing-m;
+    text-align: center;
+}

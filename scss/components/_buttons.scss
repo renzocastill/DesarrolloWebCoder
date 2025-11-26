@@ -1,0 +1,14 @@
+@use "../utils/variables" as *;
+
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        background-color: #e0a800;
+        transform: scale(1.05);
+    }
+}

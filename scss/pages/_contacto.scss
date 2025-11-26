@@ -1,0 +1,27 @@
+@use "../utils/variables" as *;
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: $spacing-l;
+    background: #1a1a1a;
+    border-radius: $radius;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    input,
+    textarea {
+        width: 100%;
+        padding: $spacing-m;
+        margin-bottom: $spacing-m;
+        border: 1px solid #444;
+        background-color: #222;
+        color: #eee;
+        border-radius: $radius;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #ffc107;
+        box-shadow: 0 0 5px rgba(255, 193, 7, 0.4);
+    }
+}

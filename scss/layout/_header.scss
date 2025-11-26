@@ -1,0 +1,14 @@
+@use "../utils/variables" as *;
+
+header {
+    background: #111;
+    padding: $spacing-m;
+
+    .logo {
+        width: 70px;
+        height: auto;
+        object-fit: contain;
+        cursor: pointer;
+    }
+}
+
