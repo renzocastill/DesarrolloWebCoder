@@ -1,0 +1,19 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Node (por si se usó npm)
+node_modules/
+
+# Cache de Sass
+.sass-cache/
+
+# Mapas generados automáticamente
+*.css.map
+
+# Cache / builds
+.cache/
+dist/
+
+# Logs
+*.log

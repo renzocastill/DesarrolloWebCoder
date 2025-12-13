@@ -3,16 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Maldita Peluquerías</title>
+
+  <title>Contacto | Maldita Peluquerías</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Contactate con Maldita Peluquerías. Consultas, turnos, servicios y ubicación en Mendoza.">
+  <meta name="keywords" content="peluquería, estética, belleza, contacto, turnos, mendoza">
+  <meta name="author" content="Maldita Peluquerías">
+
+  <!-- Optimización de carga -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Animaciones AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Estilos -->
   <link rel="stylesheet" href="../assets/css/style.css">
-
-  <!-- Tipografía -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,15 +36,15 @@
   <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-      <div class="container d-flex justify-content-between align-items-center">
+      <div class="container">
 
         <!-- LOGO -->
-        <a href="../index.html" class="navbar-brand d-flex align-items-center">
-          <img src="../assets/img/maldita peluqueria.jpg" alt="Logo de Maldita Peluquerías" class="logo">
+        <a href="../index.html" class="navbar-brand d-flex align-items-center" aria-label="Ir al inicio">
+          <img src="../assets/img/maldita-peluqueria.jpg" alt="Logo de Maldita Peluquerías" class="logo" loading="lazy">
           <h1 class="h3 m-0">Maldita Peluquerías</h1>
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -51,6 +67,7 @@
                  id="serviciosDropdown"
                  data-bs-toggle="dropdown"
                  role="button"
+                 aria-haspopup="true"
                  aria-expanded="false">
                 Servicios
               </a>
@@ -85,27 +102,28 @@
 
   <!-- Main -->
   <main class="container my-5">
-    <h2 class="text-center text-warning mb-4">Contáctanos</h2>
+
+    <h2 class="text-center text-warning mb-4" data-aos="fade-up">Contáctanos</h2>
 
     <div class="row g-4">
 
       <!-- Formulario -->
       <div class="col-md-6">
-        <form class="bg-dark text-light p-4 rounded shadow-sm">
+        <form class="bg-dark text-light p-4 rounded shadow-sm" data-aos="fade-right">
 
           <div class="mb-3">
             <label for="nombre" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre y apellido">
+            <input type="text" required minlength="3" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre y apellido">
           </div>
 
           <div class="mb-3">
             <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="tuemail@ejemplo.com">
+            <input type="email" required class="form-control" id="email" name="email" placeholder="tuemail@ejemplo.com">
           </div>
 
           <div class="mb-3">
             <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta..."></textarea>
+            <textarea class="form-control" required minlength="5" id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-warning w-100">Enviar mensaje</button>
@@ -114,31 +132,25 @@
       </div>
 
       <!-- Mapa -->
-      <div class="col-md-6 d-flex justify-content-center align-items-center">
+      <div class="col-md-6 d-flex justify-content-center align-items-center" data-aos="fade-left">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7421010077096!2d-68.86214792478354!3d-32.95781777358866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b22339e4ce3%3A0x4bfde608267235fd!2sMaldita%20Peluqueria!5e0!3m2!1ses-419!2sar!4v1762915394942!5m2!1ses-419!2sar"
-          width="600"
-          height="450"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7421000071718!2d-68.859573!3d-32.9578178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b22339e4ce3%3A0x4bfde608267235fd!2sMaldita%20Peluqueria!5e0!3m2!1ses-419!2sar!4v1765573497062!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </iframe>
       </div>
 
     </div>
 
     <!-- Redes -->
-    <section class="text-center mt-5">
+    <section class="text-center mt-5" data-aos="zoom-in">
       <h3 class="text-warning mb-3">Contáctanos por redes</h3>
       <div class="d-flex justify-content-center gap-4 fs-4">
-        <a href="https://www.instagram.com/malditapeluquerias/" class="text-light">
+        <a aria-label="Instagram" href="https://www.instagram.com/malditapeluquerias/" class="text-light">
           <i class="bi bi-instagram"></i> Instagram
         </a>
-        <a href="https://www.facebook.com/malditalookeria/" class="text-light">
+        <a aria-label="Facebook" href="https://www.facebook.com/malditalookeria/" class="text-light">
           <i class="bi bi-facebook"></i> Facebook
         </a>
-        <a href="https://api.whatsapp.com/send?phone=5492617003606" class="text-light">
+        <a aria-label="WhatsApp" href="https://api.whatsapp.com/send?phone=5492617003606" class="text-light">
           <i class="bi bi-whatsapp"></i> WhatsApp
         </a>
       </div>
@@ -151,34 +163,15 @@
     <p class="mb-0">&copy; 2025 Maldita Peluquerías - Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Scripts Dropdown -->
+  <!-- AOS Animaciones -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Abrir el menú al pasar el mouse
-    document.querySelectorAll('.dropdown').forEach(dropdown => {
-      dropdown.addEventListener('mouseenter', function () {
-        const toggle = this.querySelector('.nav-link');
-        const menu = this.querySelector('.dropdown-menu');
-        const bsDropdown = new bootstrap.Dropdown(toggle);
-        bsDropdown.show();
-      });
-      dropdown.addEventListener('mouseleave', function () {
-        const toggle = this.querySelector('.nav-link');
-        const bsDropdown = bootstrap.Dropdown.getInstance(toggle);
-        bsDropdown.hide();
-      });
-    });
-
-    // Redirigir al hacer clic en "Servicios"
-    document.querySelector('#serviciosDropdown').addEventListener('click', function (e) {
-      window.location.href = this.getAttribute('href');
-    });
+    AOS.init();
   </script>
 
 </body>
 </html>
+
